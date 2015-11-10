@@ -1,0 +1,32 @@
+# autodatabases
+This is a module (library) to be used in an Android Application
+This module is a mechanism to create relational databases from a java object without the need for the user 
+to use SQL code and provide methods for data manipulation.
+
+@Table(name = "Costumers") // Table name
+public class Costumer extends Model {
+
+    //All the Model subclasses must have a zero argument constructor or default constructor
+
+    @Column(name = "Name") //column name
+    private String name;
+
+    @HasMany    //relations with other tables
+    List<Address> adress;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void save(){
+        super.save();
+    }
+
+
+
+}
+
