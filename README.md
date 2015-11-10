@@ -4,7 +4,9 @@ This module is a mechanism to create relational databases from a java object wit
 
 
 // Table name
+
 @Table(name = "Costumers")
+
 public class Costumer extends Model {
 
     //All the Model subclasses must have a zero argument constructor or default constructor
