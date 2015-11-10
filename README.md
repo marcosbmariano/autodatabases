@@ -3,6 +3,7 @@ This is a module (library) to be used in an Android Application.
 This module is a mechanism to create relational databases from a java object without the need for SQL code . The module also provide methods for data manipulation. (CRUD)
 
 @Table(name = "Costumers") // Table name
+
 public class Costumer extends Model {
 
     //All the Model subclasses must have a zero argument constructor or default constructor
